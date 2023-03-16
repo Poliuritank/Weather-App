@@ -1,4 +1,8 @@
+
 * {
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -6,7 +10,6 @@
 
 body {
 	background: linear-gradient(to right bottom, #ea2c62, #120078);
-	font-family: Arial, sans-serif;
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -46,10 +49,19 @@ body {
 	z-index: 1;
 }
 .top h1 {
+	font-weight: 300;
 	user-select: none;
 	color: white;
 	opacity: 80%;
+	letter-spacing: 1px;
 	line-height: 2;
+	padding-bottom: 30px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .top input,
 button {
@@ -65,53 +77,57 @@ button {
 .top input {
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.5);
-	border-bottom: solid 2px rgb(149, 151, 255);
+	border-bottom: solid 2px #6e136f;
+	border-top: solid 2px #05345f;
 	border-radius: 10px 0 10px 0;
 	text-align: center;
 	font-size: 14px;
 	transition: all 0.3s;
+	letter-spacing: 2px;
 }
 .top input:focus {
-	border-bottom: solid 2px #db6400;
+	border-bottom: solid 2px #05345f;
+	border-top: solid 2px #6e136f;
 }
 .top input::placeholder {
 	color: rgba(255, 255, 255, 0.3);
+	letter-spacing: 2px;
 }
 .top button {
 	letter-spacing: 1px;
-	background-color: #db6400;
+	background-color: #05345f;
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 300;
 	text-transform: uppercase;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s;
 }
 .top button:hover {
-	background-color: #b05102;
+	background-color: #09569e;
 }
 
 .top .error {
-	color: white;
+	width: 80%;
+	color: #ea2c62;
 	font-size: 14px;
 }
 
 .icon {
-	/* text-align: center; */
 	padding-top: 15px;
 }
 
 .location {
 	padding-bottom: 15px;
-	/* text-align: center; */
 	color: white;
 	line-height: 1.6;
 	text-align: right;
 }
 .location .city {
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
 .current {
 	width: 100%;
@@ -131,4 +147,9 @@ button {
 }
 .current > * {
 	padding-bottom: 5px;
+}
+
+.current__item {
+	display: flex;
+	justify-content: space-between;
 }

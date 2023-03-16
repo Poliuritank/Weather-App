@@ -5,14 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather App</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="main-container">
 			<div class="container top">
-				<h1>Weather APP</h1>
-				<form action="" onsubmit="return false">
+				<h1>Weather App</h1>
+				<form action="" onsubmit="return false" class="form">
 					<input type="text" class="search" placeholder="Search by city name" />
-					<button type="submit" class="btn">Submit</button>
+					<button type="submit" class="btn">Search</button>
 					<p class="error"></p>
 				</form>
 				<section>
@@ -21,13 +27,30 @@
 							<img src="" class="weather-icon" />
 						</div>
 						<div class="location">
-							<div class="city">New York, US</div>
-							<div class="date">Thursday, Nov 26 2023</div>
+							<div class="city">City, Country</div>
+							<div class="date"></div>
 						</div>
 						<div class="current">
-							<div class="temp">Temp: 25 <span>&deg;C</span></div>
-							<div class="weather">Weather: Sunny</div>
-							<div class="temp-range">Temp Range: 10&deg;C / 15&deg;C</div>
+							<div class="current__item weather">
+								<div class="item__name">Weather:</div>
+								<div class="item__property weather__property"></div>
+							</div>
+							<div class="current__item weather">
+								<div class="item__name">Temp:</div>
+								<div class="item__property temp__property"></div>
+							</div>
+							<div class="current__item weather">
+								<div class="item__name">Temp Range:</div>
+								<div class="item__property temp-range__property"></div>
+							</div>
+							<div class="current__item weather">
+								<div class="item__name">Feels like:</div>
+								<div class="item__property feels__property"></div>
+							</div>
+							<div class="current__item weather">
+								<div class="item__name">Wind speed:</div>
+								<div class="item__property wind__property"></div>
+							</div>
 						</div>
 					</div>
 				</section>
