@@ -1,10 +1,13 @@
 * {
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	letter-spacing: 1px;
+	line-height: 1.6;
 }
 
 body {
@@ -49,11 +52,11 @@ body {
 	z-index: 1;
 }
 .top h1 {
+	font-size: 40px;
 	font-weight: 300;
 	user-select: none;
 	color: white;
 	opacity: 80%;
-	letter-spacing: 1px;
 	line-height: 2;
 	padding-bottom: 30px;
 }
@@ -81,9 +84,8 @@ button {
 	border-top: solid 2px #05345f;
 	border-radius: 10px 0 10px 0;
 	text-align: center;
-	font-size: 14px;
+	
 	transition: all 0.3s;
-	letter-spacing: 2px;
 	-webkit-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
 	-moz-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
 	box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
@@ -94,10 +96,8 @@ button {
 }
 .top input::placeholder {
 	color: rgba(255, 255, 255, 0.3);
-	letter-spacing: 2px;
 }
 .top button {
-	letter-spacing: 1px;
 	background: rgb(5, 52, 95);
 	background: linear-gradient(
 		180deg,
@@ -105,7 +105,7 @@ button {
 		rgba(50, 83, 204, 0.549) 100%
 	);
 	color: rgba(255, 255, 255, 0.6);
-	font-size: 14px;
+	
 	font-weight: 300;
 	text-transform: uppercase;
 	border-radius: 5px;
@@ -118,22 +118,29 @@ button {
 .top button:hover {
 	background-color: #09569e;
 }
+.top button:active {
+	background-color: #042442;
+	transition: all 0.1s;
+}
 
 .top .error {
 	width: 80%;
 	color: #ea2c62;
-	font-size: 14px;
+	font-weight: 300;
 }
 
 .icon {
-	padding-top: 15px;
+	padding-top: 5px;
 }
 
 .location {
-	padding-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	color: white;
-	line-height: 1.6;
-	text-align: right;
+}
+.date {
+	color: #fff;
 }
 .location .city {
 	font-size: 20px;
@@ -165,3 +172,4 @@ button {
 	justify-content: space-between;
 	padding-bottom: 5px;
 }
+

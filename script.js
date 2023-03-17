@@ -66,6 +66,11 @@ function displayData(response) {
 		feels.innerHTML = `${response.main.feels_like}&deg;C`;
 		const wind = document.querySelector('.wind__property');
 		wind.innerHTML = `${response.wind.speed} m/s`;
+		
+		const weatherIcon = document.querySelector('.weather-icon');
+		const iconURL = 'https://openweathermap.org/img/w/';
+		weatherIcon.src = iconURL + response.weather[0].icon +'.png'
+		// wind.innerHTML = `${response.main} m/s`;
 	}
 }
 
