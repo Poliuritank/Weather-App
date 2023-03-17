@@ -70,7 +70,7 @@ function displayData(response) {
 		const weatherIcon = document.querySelector('.weather-icon');
 		const iconURL = 'https://openweathermap.org/img/w/';
 		weatherIcon.src = iconURL + response.weather[0].icon +'.png'
-		// wind.innerHTML = `${response.main} m/s`;
+		searchINPUT.value = ''
 	}
 }
 
