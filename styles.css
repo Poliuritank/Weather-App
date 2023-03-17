@@ -8,8 +8,6 @@
 }
 
 body {
-	/* background: linear-gradient(to right bottom, #ea2c62, #120078) ; */
-	/* background-color: #6e136f; */
 	background: rgb(234, 44, 98);
 	background: linear-gradient(
 		138deg,
@@ -17,8 +15,6 @@ body {
 		rgba(18, 0, 120, 1) 100%
 	);
 	padding: 30px 0 250px 0;
-	/* width: 100vw; */
-	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,7 +31,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	width: 70%;
-	/* max-width: 320px; */
+	max-width: 500px;
 	height: 80vh;
 	min-height: 600px;
 	background: url(./images/weather.png) no-repeat center;
@@ -43,19 +39,11 @@ body {
 	border-radius: 20px;
 	overflow: hidden;
 	position: relative;
-	-webkit-box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
--moz-box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
-box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
+	-webkit-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
 }
-/* .main-container::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-} */
+
 .top {
 	text-align: center;
 	z-index: 1;
@@ -110,9 +98,12 @@ button {
 }
 .top button {
 	letter-spacing: 1px;
-	/* background-color: #05345f; */
-	background: rgb(5,52,95);
-background: linear-gradient(180deg, rgba(5,52,95,1) 30%, rgba(50, 83, 204, 0.549) 100%);
+	background: rgb(5, 52, 95);
+	background: linear-gradient(
+		180deg,
+		rgba(5, 52, 95, 1) 30%,
+		rgba(50, 83, 204, 0.549) 100%
+	);
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 14px;
 	font-weight: 300;

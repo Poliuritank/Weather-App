@@ -22,7 +22,7 @@ date.innerText = now;
 function getInput(e) {
 	e.preventDefault();
 	if (!searchINPUT.value) {
-		searchINPUT.placeholder = 'Введіть назву міста';
+		searchINPUT.placeholder = 'Enter the city name';
 
 		return;
 	}
@@ -41,7 +41,7 @@ function getData() {
 
 function displayData(response) {
 	if (response.cod === '404') {
-		error.textContent = 'Enter the real name of the city';
+		error.textContent = 'Enter the real city name!';
 		searchINPUT.value = '';
 	} else {
 		console.log(response);
