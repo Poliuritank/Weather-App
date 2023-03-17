@@ -1,4 +1,3 @@
-
 * {
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Roboto', sans-serif;
@@ -9,9 +8,17 @@
 }
 
 body {
-	background: linear-gradient(to right bottom, #ea2c62, #120078);
-	width: 100%;
-	height: 100vh;
+	/* background: linear-gradient(to right bottom, #ea2c62, #120078) ; */
+	/* background-color: #6e136f; */
+	background: rgb(234, 44, 98);
+	background: linear-gradient(
+		138deg,
+		rgba(234, 44, 98, 1) 0%,
+		rgba(18, 0, 120, 1) 100%
+	);
+	padding: 30px 0 250px 0;
+	/* width: 100vw; */
+	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,21 +29,25 @@ body {
 	margin: 0 auto;
 }
 .main-container {
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 100%;
-	max-width: 320px;
+	width: 70%;
+	/* max-width: 320px; */
 	height: 80vh;
-	/* min-height: 500px; */
+	min-height: 600px;
 	background: url(./images/weather.png) no-repeat center;
 	background-size: cover;
-	border-radius: 10px;
+	border-radius: 20px;
 	overflow: hidden;
 	position: relative;
+	-webkit-box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
+box-shadow: 0px 10px 39px 7px rgba(0,0,0,0.42);
 }
-.main-container::before {
+/* .main-container::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -44,7 +55,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-}
+} */
 .top {
 	text-align: center;
 	z-index: 1;
@@ -85,6 +96,9 @@ button {
 	font-size: 14px;
 	transition: all 0.3s;
 	letter-spacing: 2px;
+	-webkit-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
 }
 .top input:focus {
 	border-bottom: solid 2px #05345f;
@@ -96,7 +110,9 @@ button {
 }
 .top button {
 	letter-spacing: 1px;
-	background-color: #05345f;
+	/* background-color: #05345f; */
+	background: rgb(5,52,95);
+background: linear-gradient(180deg, rgba(5,52,95,1) 30%, rgba(50, 83, 204, 0.549) 100%);
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 14px;
 	font-weight: 300;
@@ -104,6 +120,9 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s;
+	-webkit-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 10px 39px 7px rgba(0, 0, 0, 0.42);
 }
 .top button:hover {
 	background-color: #09569e;

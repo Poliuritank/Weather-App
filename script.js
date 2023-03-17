@@ -53,9 +53,15 @@ function displayData(response) {
 		const weather = document.querySelector('.weather__property');
 		weather.innerText = `${response.weather[0].main}`;
 		const tempRange = document.querySelector('.temp-range__property');
-		tempRange.innerHTML = `${Math.floor(
-			response.main.temp_min
-		)}&deg;C - ${Math.round(response.main.temp_max)}&deg;C`;
+		if (response.main.temp_min == response.main.temp_max) {
+			tempRange.innerHTML = `${Math.round(
+			response.main.temp_min)}&deg;C`
+		} else {
+			tempRange.innerHTML = `${Math.floor(
+				response.main.temp_min
+			)}&deg;C - ${Math.round(response.main.temp_max)}&deg;C`;
+		}
+		
 		const feels = document.querySelector('.feels__property');
 		feels.innerHTML = `${response.main.feels_like}&deg;C`;
 		const wind = document.querySelector('.wind__property');
